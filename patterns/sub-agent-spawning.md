@@ -5,7 +5,7 @@ authors: ["Nikola Balic (@nibzard)"]
 based_on: ["Quinn Slack", "Thorsten Ball", "Will Larson (lethain.com)"]
 category: Orchestration & Control
 source: "https://www.nibzard.com/ampcode"
-tags: [orchestration, context, scalability, subagents, yaml-configuration, virtual-files]
+tags: [orchestration, context, scalability, subagents, yaml-configuration, virtual-files, subject-hygiene, parallel-delegation]
 ---
 
 ## Problem
@@ -15,6 +15,8 @@ Large multi-file tasks blow out the main agent's context window and reasoning bu
 ## Solution
 
 Let the main agent **spawn focused sub-agents**, each with its own fresh context, to work in parallel on shardable subtasks. Aggregate their results when done.
+
+**Critical requirement**: Each subagent invocation must have a clear, specific task subject for traceability. Empty or generic subjects make parallel work untraceable and synthesis difficult. See [Subject Hygiene](subject-hygiene.md) for details.
 
 **Implementation approaches:**
 
@@ -60,28 +62,60 @@ Spawn subagents on-demand for parallel task execution:
 files = glob("**/*.md")
 batches = chunk(files, 9)
 
-# Spawn subagents for each batch
+# Spawn subagents for each batch IN PARALLEL
 for batch in batches:
     spawn_subagent(
-        task="Update YAML front-matter in these files",
+        task="Update YAML front-matter in markdown files",  # Clear, specific subject
         files=batch,
         context=instructions
     )
+# All subagents run concurrently, not sequentially
 ```
+
+**Parallel delegation best practices:**
+
+- **Launch independent tasks simultaneously**: Don't explore A, then B, then C sequentially
+- **Use clear task subjects**: Each subagent needs a traceable identity (see [Subject Hygiene](subject-hygiene.md))
+- **Plan synthesis upfront**: Define how main agent will combine subagent findings
+- **Limit to 2-4 subagents**: Observed maximum in effective sessions; more adds coordination overhead
 
 Recent developments show that improved agent [state externalization capabilities](proactive-agent-state-externalization.md) may make subagent delegation more practical by helping agents better identify which tasks are suitable for delegation and how to communicate necessary context to subagents.
 
 ## Example (YAML front-matter refactor)
+
+**Parallel delegation with clear subjects:**
+
 ```mermaid
 sequenceDiagram
   MainAgent->>GlobTool: "*.md"
   MainAgent->>TaskTool: spawn 4 sub-agents with 9 files each
-  loop per SubAgent
-      SubAgent->>Files: update front-matter
-      SubAgent->>Git: commit
+
+  par Parallel subagents (launched together)
+      MainAgent->>SubAgent1: "Update front-matter: batch 1"
+      MainAgent->>SubAgent2: "Update front-matter: batch 2"
+      MainAgent->>SubAgent3: "Update front-matter: batch 3"
+      MainAgent->>SubAgent4: "Update front-matter: batch 4"
   end
+
+  par Each works independently
+      SubAgent1->>Files: update batch 1
+      SubAgent2->>Files: update batch 2
+      SubAgent3->>Files: update batch 3
+      SubAgent4->>Files: update batch 4
+  end
+
   MainAgent->>Git: merge branches ➜ single PR
 ```
+
+**Real-world example from nibzard-web:**
+
+Four parallel subagents launched simultaneously:
+- `"Newsletter component exploration"` → agent-a7911db
+- `"Modal pattern discovery"` → agent-adeac17
+- `"Search implementation research"` → agent-a03b9c9
+- `"Log page analysis"` → agent-b84c3d1
+
+Main agent synthesized findings and implemented unified approach.
 
 ## How to use it
 
@@ -184,6 +218,7 @@ Users spending $1000+/month on Claude Code are typically running swarm migration
 
 ## References
 
+* [SKILLS-AGENTIC-LESSONS.md](https://github.com/nibzard/SKILLS-AGENTIC-LESSONS) - Analysis of 88 sessions emphasizing clear task subjects and parallel delegation patterns
 * Raising An Agent - Episode 6: Claude 4 Sonnet edits 36 blog posts via four sub-agents.
 * Boris Cherny (Anthropic) on swarm migrations for framework changes and lint rules
 * [AI & I Podcast: How to Use Claude Code Like the People Who Built It](https://every.to/podcast/transcript-how-to-use-claude-code-like-the-people-who-built-it)
