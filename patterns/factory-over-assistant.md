@@ -31,12 +31,12 @@ Shift from the **assistant model** to the **factory model**: spawn multiple auto
 
 ```mermaid
 graph TD
-    subgraph ["Assistant Model (Old)"]
+    subgraph Assistant_Old["Assistant Model (Old)"]
         A1[Human] <-->|Sidebar ping-pong| B1[Agent]
         B1 -->|One task at a time| C1[Results]
     end
 
-    subgraph ["Factory Model (New)"]
+    subgraph Factory_New["Factory Model (New)"]
         A2[Human] -->|Spawn tasks| B2[Agent 1]
         A2 -->|Spawn tasks| B3[Agent 2]
         A2 -->|Spawn tasks| B4[Agent 3]
