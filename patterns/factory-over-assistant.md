@@ -62,7 +62,7 @@ graph TD
 | **Present** | Hybrid | Set up automated loops | Mixed interactive and autonomous |
 | **Future** | Factory | Orchestrate and review | Fully autonomous, minimal human contact |
 
-**Key insight:** With models like GPT-5.2 Codex that can work autonomously for 45+ minutes, watching them in a sidebar is wasteful. You should be able to spawn 10 such agents and check on them all later.
+**Key insight:** With models like GPT-5.2 that can work autonomously for 45+ minutes, watching them in a sidebar is wasteful. You should be able to spawn 10 such agents and check on them all later.
 
 ## How to use it
 
@@ -94,7 +94,7 @@ Instead of being the feedback loop yourself, set up:
 **3. Use appropriate models for each mode:**
 
 - **Interactive mode**: Use "trigger happy" models like Opus for quick tasks
-- **Factory mode**: Use "lazy" research-oriented models like GPT-5.2 Codex for autonomous work
+- **Factory mode**: Use "lazy" research-oriented models like GPT-5.2 for autonomous work
 
 **4. Embrace asynchronous workflows:**
 
