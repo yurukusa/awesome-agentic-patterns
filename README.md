@@ -61,7 +61,7 @@ The tables below are auto‑generated from the `patterns/` folder.
 - [Prompt Caching via Exact Prefix Preservation](patterns/prompt-caching-via-exact-prefix-preservation.md) <span class='updated-badge'>UPDATED</span>
 - [Self-Identity Accumulation](patterns/self-identity-accumulation.md) <span class='updated-badge'>UPDATED</span>
 - [Semantic Context Filtering Pattern](patterns/semantic-context-filtering.md)
-- [Working Memory via TodoWrite](patterns/working-memory-via-todos.md)
+- [Working Memory via TodoWrite](patterns/working-memory-via-todos.md) <span class='new-badge'>NEW</span>
 
 ### <a name="feedback-loops"></a>Feedback Loops
 
@@ -73,7 +73,7 @@ The tables below are auto‑generated from the `patterns/` folder.
 - [Inference-Healed Code Review Reward](patterns/inference-healed-code-review-reward.md)
 - [Iterative Prompt & Skill Refinement](patterns/iterative-prompt-skill-refinement.md) <span class='updated-badge'>UPDATED</span>
 - [Reflection Loop](patterns/reflection.md)
-- [Rich Feedback Loops > Perfect Prompts](patterns/rich-feedback-loops.md)
+- [Rich Feedback Loops > Perfect Prompts](patterns/rich-feedback-loops.md) <span class='updated-badge'>UPDATED</span>
 - [Self-Critique Evaluator Loop](patterns/self-critique-evaluator-loop.md)
 - [Self-Discover: LLM Self-Composed Reasoning Structures](patterns/self-discover-reasoning-structures.md)
 - [Spec-As-Test Feedback Loop](patterns/spec-as-test-feedback-loop.md)
@@ -83,23 +83,28 @@ The tables below are auto‑generated from the `patterns/` folder.
 
 - [Agent Reinforcement Fine-Tuning (Agent RFT)](patterns/agent-reinforcement-fine-tuning.md)
 - [Compounding Engineering Pattern](patterns/compounding-engineering-pattern.md)
+- [Frontier-Focused Development](patterns/frontier-focused-development.md)
 - [Memory Reinforcement Learning (MemRL)](patterns/memory-reinforcement-learning-memrl.md)
+- [Shipping as Research](patterns/shipping-as-research.md)
 - [Skill Library Evolution](patterns/skill-library-evolution.md) <span class='updated-badge'>UPDATED</span>
 - [Variance-Based RL Sample Selection](patterns/variance-based-rl-sample-selection.md)
 
 ### <a name="orchestration-control"></a>Orchestration & Control
 
 - [Action-Selector Pattern](patterns/action-selector-pattern.md)
+- [Agent Modes by Model Personality](patterns/agent-modes-by-model-personality.md)
 - [Agent-Driven Research](patterns/agent-driven-research.md)
 - [Autonomous Workflow Agent Architecture](patterns/autonomous-workflow-agent-architecture.md)
-- [Conditional Parallel Tool Execution](patterns/parallel-tool-execution.md) <span class='updated-badge'>UPDATED</span>
+- [Burn the Boats](patterns/burn-the-boats.md)
+- [Conditional Parallel Tool Execution](patterns/parallel-tool-execution.md)
 - [Continuous Autonomous Task Loop Pattern](patterns/continuous-autonomous-task-loop-pattern.md)
 - [Custom Sandboxed Background Agent](patterns/custom-sandboxed-background-agent.md) <span class='updated-badge'>UPDATED</span>
-- [Discrete Phase Separation](patterns/discrete-phase-separation.md) <span class='updated-badge'>UPDATED</span>
+- [Discrete Phase Separation](patterns/discrete-phase-separation.md)
 - [Disposable Scaffolding Over Durable Features](patterns/disposable-scaffolding-over-durable-features.md)
 - [Distributed Execution with Cloud Workers](patterns/distributed-execution-cloud-workers.md)
 - [Dual LLM Pattern](patterns/dual-llm-pattern.md)
 - [Explicit Posterior-Sampling Planner](patterns/explicit-posterior-sampling-planner.md)
+- [Factory over Assistant](patterns/factory-over-assistant.md)
 - [Feature List as Immutable Contract](patterns/feature-list-as-immutable-contract.md)
 - [Hybrid LLM/Code Workflow Coordinator](patterns/hybrid-llm-code-workflow-coordinator.md)
 - [Inference-Time Scaling](patterns/inference-time-scaling.md)
@@ -114,7 +119,7 @@ The tables below are auto‑generated from the `patterns/` folder.
 - [Oracle and Worker Multi-Model Approach](patterns/oracle-and-worker-multi-model.md)
 - [Parallel Tool Call Learning](patterns/parallel-tool-call-learning.md)
 - [Plan-Then-Execute Pattern](patterns/plan-then-execute-pattern.md)
-- [Planner-Worker Separation for Long-Running Agents](patterns/planner-worker-separation-for-long-running-agents.md) <span class='updated-badge'>UPDATED</span>
+- [Planner-Worker Separation for Long-Running Agents](patterns/planner-worker-separation-for-long-running-agents.md)
 - [Progressive Autonomy with Model Evolution](patterns/progressive-autonomy-with-model-evolution.md)
 - [Progressive Complexity Escalation](patterns/progressive-complexity-escalation.md)
 - [Recursive Best-of-N Delegation](patterns/recursive-best-of-n-delegation.md) <span class='updated-badge'>UPDATED</span>
@@ -122,11 +127,11 @@ The tables below are auto‑generated from the `patterns/` folder.
 - [Specification-Driven Agent Development](patterns/specification-driven-agent-development.md)
 - [Stop Hook Auto-Continue Pattern](patterns/stop-hook-auto-continue-pattern.md)
 - [Sub-Agent Spawning](patterns/sub-agent-spawning.md) <span class='updated-badge'>UPDATED</span>
-- [Subject Hygiene for Task Delegation](patterns/subject-hygiene.md)
+- [Subject Hygiene for Task Delegation](patterns/subject-hygiene.md) <span class='new-badge'>NEW</span>
 - [Swarm Migration Pattern](patterns/swarm-migration-pattern.md)
 - [Three-Stage Perception Architecture](patterns/three-stage-perception-architecture.md)
 - [Tool Capability Compartmentalization](patterns/tool-capability-compartmentalization.md)
-- [Tool Selection Guide](patterns/tool-selection-guide.md)
+- [Tool Selection Guide](patterns/tool-selection-guide.md) <span class='new-badge'>NEW</span>
 - [Tree-of-Thought Reasoning](patterns/tree-of-thought-reasoning.md)
 
 ### <a name="reliability-eval"></a>Reliability & Eval
@@ -189,7 +194,9 @@ The tables below are auto‑generated from the `patterns/` folder.
 - [Agent-Friendly Workflow Design](patterns/agent-friendly-workflow-design.md)
 - [AI-Accelerated Learning and Skill Development](patterns/ai-accelerated-learning-and-skill-development.md)
 - [Chain-of-Thought Monitoring & Interruption](patterns/chain-of-thought-monitoring-interruption.md)
+- [Codebase Optimization for Agents](patterns/codebase-optimization-for-agents.md)
 - [Democratization of Tooling via Agents](patterns/democratization-of-tooling-via-agents.md)
+- [Dev Tooling Assumptions Reset](patterns/dev-tooling-assumptions-reset.md)
 - [Human-in-the-Loop Approval Framework](patterns/human-in-loop-approval-framework.md)
 - [Latent Demand Product Discovery](patterns/latent-demand-product-discovery.md)
 - [Proactive Trigger Vocabulary](patterns/proactive-trigger-vocabulary.md)
