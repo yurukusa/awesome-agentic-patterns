@@ -22,14 +22,14 @@ Traditional development tools are built on assumptions that no longer hold: that
 
 ```mermaid
 graph TD
-    subgraph ["Old Assumptions"]
+    subgraph Old_Assumptions["Old Assumptions"]
         A1[Humans write code]
         A2[Code is scarce/valuable]
         A3[Developers are busy]
         A4[Changes are permanent]
     end
 
-    subgraph ["New Reality"]
+    subgraph New_Reality["New Reality"]
         B1[Agents write code]
         B2[Code is abundant/cheap]
         B3[Agents are unlimited]

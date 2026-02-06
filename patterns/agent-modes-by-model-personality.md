@@ -5,7 +5,7 @@ authors: ["Nikola Balic (@nibzard)"]
 based_on: ["AMP (Thorsten Ball, Quinn Slack)"]
 category: "Orchestration & Control"
 source: "https://www.youtube.com/watch?v=4rx36wc9ugw"
-tags: [model-personality, interaction-modes, multi-model, ux-design, agent-behavior, opus, gbd52]
+tags: [model-personality, interaction-modes, multi-model, ux-design, agent-behavior, opus, gpt-52]
 ---
 
 ## Problem
@@ -27,7 +27,7 @@ Design **different agent modes** optimized for each model's personality rather t
 | Model | Personality | Working Style | Best For |
 |-------|-------------|---------------|----------|
 | **Claude Opus 4.5** | Trigger happy, interactive | Runs commands, asks questions, rapid feedback loops | Quick back-and-forth, interactive tasks |
-| **GPT-5.2 Codeium** | Lazy, thorough, deep researcher | Goes off for 45+ minutes, researches extensively, comes back with comprehensive results | Well-scoped problems, big tasks, finding information |
+| **GPT-5.2** | Lazy, thorough, deep researcher | Goes off for 45+ minutes, researches extensively, comes back with comprehensive results | Well-scoped problems, big tasks, finding information |
 
 ```mermaid
 graph LR
@@ -60,7 +60,7 @@ graph LR
 AMP created three distinct modes:
 - **Smart Mode**: Opus 4.5 for interactive assistant work
 - **Rush Mode**: Haiku for fast, less smart tasks
-- **Deep Mode**: GPT-5.2 Codeium for thorough research and autonomous work
+- **Deep Mode**: GPT-5.2 for thorough research and autonomous work
 
 The team explicitly avoids a "model selector" dropdown and instead presents these as different working modes.
 
