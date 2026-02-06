@@ -83,19 +83,19 @@ The tables below are auto‑generated from the `patterns/` folder.
 
 - [Agent Reinforcement Fine-Tuning (Agent RFT)](patterns/agent-reinforcement-fine-tuning.md)
 - [Compounding Engineering Pattern](patterns/compounding-engineering-pattern.md)
-- [Frontier-Focused Development](patterns/frontier-focused-development.md)
+- [Frontier-Focused Development](patterns/frontier-focused-development.md) <span class='new-badge'>NEW</span>
 - [Memory Reinforcement Learning (MemRL)](patterns/memory-reinforcement-learning-memrl.md)
-- [Shipping as Research](patterns/shipping-as-research.md)
+- [Shipping as Research](patterns/shipping-as-research.md) <span class='new-badge'>NEW</span>
 - [Skill Library Evolution](patterns/skill-library-evolution.md) <span class='updated-badge'>UPDATED</span>
 - [Variance-Based RL Sample Selection](patterns/variance-based-rl-sample-selection.md)
 
 ### <a name="orchestration-control"></a>Orchestration & Control
 
 - [Action-Selector Pattern](patterns/action-selector-pattern.md)
-- [Agent Modes by Model Personality](patterns/agent-modes-by-model-personality.md)
+- [Agent Modes by Model Personality](patterns/agent-modes-by-model-personality.md) <span class='new-badge'>NEW</span>
 - [Agent-Driven Research](patterns/agent-driven-research.md)
 - [Autonomous Workflow Agent Architecture](patterns/autonomous-workflow-agent-architecture.md)
-- [Burn the Boats](patterns/burn-the-boats.md)
+- [Burn the Boats](patterns/burn-the-boats.md) <span class='new-badge'>NEW</span>
 - [Conditional Parallel Tool Execution](patterns/parallel-tool-execution.md)
 - [Continuous Autonomous Task Loop Pattern](patterns/continuous-autonomous-task-loop-pattern.md)
 - [Custom Sandboxed Background Agent](patterns/custom-sandboxed-background-agent.md) <span class='updated-badge'>UPDATED</span>
@@ -104,7 +104,7 @@ The tables below are auto‑generated from the `patterns/` folder.
 - [Distributed Execution with Cloud Workers](patterns/distributed-execution-cloud-workers.md)
 - [Dual LLM Pattern](patterns/dual-llm-pattern.md)
 - [Explicit Posterior-Sampling Planner](patterns/explicit-posterior-sampling-planner.md)
-- [Factory over Assistant](patterns/factory-over-assistant.md)
+- [Factory over Assistant](patterns/factory-over-assistant.md) <span class='new-badge'>NEW</span>
 - [Feature List as Immutable Contract](patterns/feature-list-as-immutable-contract.md)
 - [Hybrid LLM/Code Workflow Coordinator](patterns/hybrid-llm-code-workflow-coordinator.md)
 - [Inference-Time Scaling](patterns/inference-time-scaling.md)
@@ -194,9 +194,9 @@ The tables below are auto‑generated from the `patterns/` folder.
 - [Agent-Friendly Workflow Design](patterns/agent-friendly-workflow-design.md)
 - [AI-Accelerated Learning and Skill Development](patterns/ai-accelerated-learning-and-skill-development.md)
 - [Chain-of-Thought Monitoring & Interruption](patterns/chain-of-thought-monitoring-interruption.md)
-- [Codebase Optimization for Agents](patterns/codebase-optimization-for-agents.md)
+- [Codebase Optimization for Agents](patterns/codebase-optimization-for-agents.md) <span class='new-badge'>NEW</span>
 - [Democratization of Tooling via Agents](patterns/democratization-of-tooling-via-agents.md)
-- [Dev Tooling Assumptions Reset](patterns/dev-tooling-assumptions-reset.md)
+- [Dev Tooling Assumptions Reset](patterns/dev-tooling-assumptions-reset.md) <span class='new-badge'>NEW</span>
 - [Human-in-the-Loop Approval Framework](patterns/human-in-loop-approval-framework.md)
 - [Latent Demand Product Discovery](patterns/latent-demand-product-discovery.md)
 - [Proactive Trigger Vocabulary](patterns/proactive-trigger-vocabulary.md)

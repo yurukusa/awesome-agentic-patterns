@@ -10,7 +10,7 @@ tags: [model-personality, interaction-modes, multi-model, ux-design, agent-behav
 
 ## Problem
 
-Different AI models have fundamentally different personalities and working styles. Treating all models the same—expecting them to work identically—leads to suboptimal outcomes. Users expect a consistent interface, but models like Opus 4.5 are "trigger happy" and want to run commands immediately, while models like GBD52 are "lazy" and prefer thorough research before acting.
+Different AI models have fundamentally different personalities and working styles. Treating all models the same—expecting them to work identically—leads to suboptimal outcomes. Users expect a consistent interface, but models like Opus 4.5 are "trigger happy" and want to run commands immediately, while models like GPT-5.2 Codex are "lazy" and prefer thorough research before acting.
 
 ## Solution
 
@@ -27,13 +27,13 @@ Design **different agent modes** optimized for each model's personality rather t
 | Model | Personality | Working Style | Best For |
 |-------|-------------|---------------|----------|
 | **Claude Opus 4.5** | Trigger happy, interactive | Runs commands, asks questions, rapid feedback loops | Quick back-and-forth, interactive tasks |
-| **GBD52 Codeium** | Lazy, thorough, deep researcher | Goes off for 45+ minutes, researches extensively, comes back with comprehensive results | Well-scoped problems, big tasks, finding information |
+| **GPT-5.2 Codex Codeium** | Lazy, thorough, deep researcher | Goes off for 45+ minutes, researches extensively, comes back with comprehensive results | Well-scoped problems, big tasks, finding information |
 
 ```mermaid
 graph LR
     A[User Request] --> B{Select Mode}
     B -->|Smart Mode| C[Opus 4.5]
-    B -->|Deep Mode| D[GBD52]
+    B -->|Deep Mode| D[GPT-5.2 Codex]
     C --> E[Interactive: Fast feedback, rapid iteration]
     D --> F[Autonomous: Send off, check back later]
     E --> G[Results in minutes]
@@ -60,7 +60,7 @@ graph LR
 AMP created three distinct modes:
 - **Smart Mode**: Opus 4.5 for interactive assistant work
 - **Rush Mode**: Haiku for fast, less smart tasks
-- **Deep Mode**: GBD52 Codeium for thorough research and autonomous work
+- **Deep Mode**: GPT-5.2 Codex Codeium for thorough research and autonomous work
 
 The team explicitly avoids a "model selector" dropdown and instead presents these as different working modes.
 
@@ -82,7 +82,7 @@ The team explicitly avoids a "model selector" dropdown and instead presents thes
 - Tasks requiring frequent human feedback
 - "Set up my Zsh RC and reload it" style tasks
 
-**Deep Mode (GBD52-like):**
+**Deep Mode (GPT-5.2 Codex-like):**
 - Well-scoped problems
 - Big tasks with clear requirements
 - Research and information gathering
