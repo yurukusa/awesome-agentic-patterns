@@ -80,7 +80,7 @@ The team explicitly avoids a "model selector" dropdown and instead presents thes
 - Quick configuration tasks
 - Debugging with rapid iteration
 - Tasks requiring frequent human feedback
-- "Set up my Zsh RC and reload it" style tasks
+- "Set up my .zshrc and reload it" style tasks
 
 **Deep Mode (GPT-5.2-like):**
 - Well-scoped problems
